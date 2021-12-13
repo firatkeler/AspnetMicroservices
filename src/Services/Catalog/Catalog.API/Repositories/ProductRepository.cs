@@ -13,7 +13,7 @@ namespace Catalog.API.Repositories
 
         public ProductRepository(ICatalogContext context)
         {
-            _context = _context ?? throw new ArgumentNullException(nameof(context));
+            _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         public async Task<IEnumerable<Product>> GetProducts()
