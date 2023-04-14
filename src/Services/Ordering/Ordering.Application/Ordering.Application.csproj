@@ -11,10 +11,33 @@
     <None Remove="Contracts\" />
     <None Remove="Features\" />
     <None Remove="Behaviours\" />
+    <None Remove="Contracts\Persistent\" />
+    <None Remove="Contracts\Infrastructure\" />
+    <None Remove="Models\" />
+    <None Remove="Mappings\" />
+    <None Remove="AutoMapper" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Features\Orders\" />
+    <None Remove="Features\Orders\Commands\" />
+    <None Remove="Features\Orders\Queries\" />
+    <None Remove="Features\Orders\Queries\GetOrdersList\" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contracts\" />
     <Folder Include="Features\" />
     <Folder Include="Behaviours\" />
+    <Folder Include="Contracts\Infrastructure\" />
+    <Folder Include="Models\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Features\Orders\" />
+    <Folder Include="Features\Orders\Commands\" />
+    <Folder Include="Features\Orders\Queries\" />
+    <Folder Include="Features\Orders\Queries\GetOrdersList\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
   </ItemGroup>
 </Project>
